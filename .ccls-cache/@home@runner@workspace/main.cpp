@@ -14,5 +14,13 @@ int main ()
   cout<< "How often is the interest rate compounded?" << endl;
   cin>> T;
   Amount = principal *( 1 +Rate / T);
+  cout<< "Interest Rate:";
+  cout<< setw(20) << Rate << "%" << endl;
+  cout<< "Times Compounded:";
+  cout<< setw(14) << T << endl;
+  cout<< "Principal:";
+  cout<< setw(23) << principal << endl;
+  cout<< "Amount in savings:";
+  cout<< setw(18) << Amount << endl;
   return 0;
 }

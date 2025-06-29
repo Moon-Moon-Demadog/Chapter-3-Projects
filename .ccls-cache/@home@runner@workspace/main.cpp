@@ -1,5 +1,6 @@
 //This program will adjust ingredients based off of how many cookies you want to bake.
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main ()
 {
@@ -11,13 +12,13 @@ int main ()
   cin>> cookies ;
   
   OGcookies = 48;
-  NewCookies = cookies / OGcookies;
+  NewCookies = cookies/OGcookies;
   flour = 2.75;
   sugar = 1.5;
   butter = 1.0;
-  NewFlour = flour * NewCookies;
-  NewSugar = sugar * NewCookies;
-  NewButter = butter * NewCookies;
+  NewFlour = (flour)*(NewCookies);
+  NewSugar = (sugar)*(NewCookies);
+  NewButter = (butter)*(NewCookies);
   
   cout<< "Perfect, you'll need " << NewFlour << " cups of flour, " << NewSugar << " cups of sugar and " << NewButter << " cups of butter to bake your cookies!" << endl;
   return 0;
